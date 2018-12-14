@@ -18,13 +18,12 @@ requirements:
  
   run:
     - perl
-    - blastall
+    - blast-legacy
     - infernal
     - R
     - bioconductor-genomeintervals
     - muscle
     - ViennaRNA
-    - fastacmd
  
 test:
   commands:
