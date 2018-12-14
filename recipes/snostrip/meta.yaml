@@ -1,0 +1,36 @@
+package:
+  name: snostrip
+  version: "0.2"
+
+source:
+  git_rev: 0.2
+  git_url: https://github.com/boll3/snoStrip.git
+
+requirements:
+  host:
+    - perl
+    - blast-legacy
+    - infernal
+    - R
+    - bioconductor-genomeintervals
+    - muscle
+    - ViennaRNA
+ 
+  run:
+    - perl
+    - blastall
+    - infernal
+    - R
+    - bioconductor-genomeintervals
+    - muscle
+    - ViennaRNA
+    - fastacmd
+ 
+test:
+  commands:
+    - snoStrip.pl -h
+
+about:
+  license: GPL3
+  license_file: README.md
+  summary: Automatic snoRNA annotation pipeline
